@@ -8,7 +8,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 7% 20px 7%;
+    margin: 20px 15px 20px 15px;
+}
+
+.second__sec div p {
+    text-align: center;
 }
 
 .second__sec div img {
@@ -16,4 +20,50 @@
     height: 100px;
     width: 100px;
 
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    border-top: 1px #e8e5e5 solid ;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer__section a {
+    text-decoration: none;
+    color: grey;
+    padding: 3px;
+}
+
+.social__net a img,.countries a img {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+
+.footer__section p {
+    margin: 0 0 5px 0 ;
+}
+
+.footer__section__ico p {
+    text-align: center;
+    margin: 0 0 7px 0 ;
+}
+
+.footer__section__ico a {
+    text-decoration: none;
+    color: black;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

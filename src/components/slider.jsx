@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default class SimpleSlider extends Component {
+export default class SimpleSlider extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      error: null,
-      isLoaded: false,
       items: []
     };
   }
@@ -20,14 +18,7 @@ export default class SimpleSlider extends Component {
       .then(
         (result) => {
           this.setState({
-            isLoaded: true,
             items: result
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
           });
         }
       )
