@@ -37,7 +37,7 @@ export default class SimpleSlider extends React.Component {
     console.log(items)
     return (
       <div>
-        <p style={{borderBottom:"0.5px gray solid",margin:"20px"}} >The best bakaries</p>
+        <p style={{borderBottom:"0.5px gray solid",margin:"20px",fontSize:"20px"}} >The best bakaries</p>
         <Slider style={{width:"90%",margin:"5%"}} {...settings}>
           {items.map((item) => (<div><img style={{width:"100%",height:"50px"}} src={`http://api.dev.cakeiteasy.no/api/store/images/${item.id}/?size=small_url&compress_type=webp`} /></div>))}
         </Slider>

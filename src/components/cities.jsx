@@ -40,7 +40,7 @@ class Cities extends React.Component {
         } else {
           return (
             <div>
-              <p style={{margin:"20px"}}>Our most popular location</p>
+              <p style={{margin:"20px",fontSize:"25px"}}>Our most popular location</p>
               <ul style={{display:"flex",flexDirection:"row",flexWrap:"wrap"}}>
                 {items.map(item => (
                   <li style={{listStyleType:"none",margin:"0 20% 0 10%",flex:"1"}} key={item.name}>
